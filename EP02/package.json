@@ -1,0 +1,14 @@
+{
+  "name": "ep02",
+  "version": "1.0.0",
+  "description": "This is episode 2 of namaste react course by Akshay Saini",
+  "main": "script.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Akshay Saini",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.11.0"
+  }
+}
