@@ -1,11 +1,13 @@
 {
-  "name": "ep02",
+  "name": "ep03",
   "version": "1.0.0",
-  "description": "This is episode 2 of namaste react course by Akshay Saini",
+  "description": "",
   "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
     "test": "jest"
   },
-  "author": "Akshay Saini",
+  "author": "",
   "license": "ISC",
   "devDependencies": {
     "parcel": "^2.11.0",
