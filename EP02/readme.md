@@ -2,11 +2,11 @@
 
 # npm
 
--- It is not stands for node package manager. It manages packages.
+- It is not stands for node package manager. It manages packages.
 
 # Bundler 
 
--- It is basically bundle our app package properly so it can be shift to production. Example:- Parcel, webpack etc.
+- It is basically bundle our app package properly so it can be shift to production. Example:- Parcel, webpack etc.
 
 # command which is need to install package and react in our app are :-
 

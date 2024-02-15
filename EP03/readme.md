@@ -1,8 +1,8 @@
 # Namaste React Episode 3
 
---npx parcel index.html means executing npm file parcel and giving it a source file index.html
+- npx parcel index.html means executing npm file parcel and giving it a source file index.html
 
--- After wriiten script on package.json we don't need to write npx parcel index.html to exctute our app we just need to write npm run start or npm start when we do npm start it will run npm run start and this npm run start behind the scence its calling parcel index.html . 
+- After wriiten script on package.json we don't need to write npx parcel index.html to exctute our app we just need to write npm run start or npm start when we do npm start it will run npm run start and this npm run start behind the scence its calling parcel index.html . 
 
 # JSX
 
