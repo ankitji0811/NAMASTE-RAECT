@@ -9,12 +9,12 @@
       - search
        - Res-card-container
           -Card
-                - Img
-                - Name
-                - Time
-                - cusines
-                - Price
-                - Rating
+           - Img
+           - Name
+           - Time
+           - cusines
+           - Price
+           - Rating
  
     - Footer
         - Links
