@@ -61,3 +61,27 @@
     padding: 5px;
     cursor: pointer;
 }
+.shimmer-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.shimmer-card{
+    height: 370px;
+    width: 200px;
+    margin: 5px;
+    padding: 5px;
+    background-color: #f0f0f0;
+}
+.shimmer-btn{
+    margin: 10px;
+    padding: 10px 50px;
+    width: 30px;
+    background-color: #f0f0f0;
+    order: none;
+    outline: none;
+}
+.user-btn{
+    margin: 10px;
+    padding: 20px;
+    cursor: pointer;
+}
