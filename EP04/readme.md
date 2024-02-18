@@ -1,7 +1,7 @@
 # Food App
 
 /*
-  App layout
+  - App layout
     - Header
         - Logo
         - Nav Item
