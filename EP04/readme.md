@@ -1,6 +1,5 @@
 # Food App
 
-/*
   - App layout
     - Header
         - Logo
@@ -21,4 +20,4 @@
         - Address
         - Copyright
  
- */
+
