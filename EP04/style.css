@@ -1,87 +1,120 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border: 1px solid black;
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid black;
 }
-.logo{
-    width: 150px;
+.logo {
+  width: 150px;
 }
 .nav-items > ul {
-    display: flex;
-    align-items: center;
-    list-style: none;
+  display: flex;
+  align-items: center;
+  list-style: none;
 }
-.nav-items > ul > li{
-    margin: 20px;
-    font-size: 24px;
+.nav-items > ul > li {
+  margin: 20px;
+  font-size: 24px;
 }
-.body{
-    border: 1px solid black;
+.body {
+  border: 1px solid black;
 }
-.search{
-    padding: 15px;
-    font-size: 28px;
+.search {
+  padding: 15px;
+  font-size: 28px;
 }
-.resCardContainer{
-    display: flex;
-    flex-wrap: wrap;
+.resCardContainer {
+  display: flex;
+  flex-wrap: wrap;
 }
-.resCard{
-    height: 370px;
-    width: 200px;
-    margin: 5px;
-    padding: 5px;
-    background-color: #f0f0f0;
-    border: 1px solid black;
-    overflow: hidden;
+.resCard {
+  height: 370px;
+  width: 200px;
+  margin: 5px;
+  padding: 5px;
+  background-color: #f0f0f0;
+  border: 1px solid black;
+  overflow: hidden;
 }
-.resCard:hover{
-    border: 2px solid black;
-    
+.resCard:hover {
+  border: 2px solid black;
 }
 
-.res-img{
-    width: 100%;
-    height: 50%;
-    object-fit: cover;
+.res-img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
 }
-.cusines{
-    color: rgba(0, 0, 0, 0.732);
-    margin: 4px 0;
+.cusines {
+  color: rgba(0, 0, 0, 0.732);
+  margin: 4px 0;
 }
-.filter-btn{
-    margin: 10px;
-    padding: 5px;
-    cursor: pointer;
+.filter-btn {
+  margin: 10px;
+  padding: 5px;
+  cursor: pointer;
 }
-.shimmer-container{
-    display: flex;
-    flex-wrap: wrap;
+.shimmer-container {
+  display: flex;
+  flex-wrap: wrap;
 }
-.shimmer-card{
-    height: 370px;
-    width: 200px;
-    margin: 5px;
-    padding: 5px;
-    background-color: #f0f0f0;
+.shimmer-card {
+  height: 370px;
+  width: 200px;
+  margin: 5px;
+  padding: 5px;
+  background-color: #f0f0f0;
 }
-.shimmer-btn{
-    margin: 10px;
-    padding: 10px 50px;
-    width: 30px;
-    background-color: #f0f0f0;
-    order: none;
-    outline: none;
+.shimmer {
+  position: relative;
 }
-.user-btn{
-    margin: 10px;
-    padding: 20px;
-    cursor: pointer;
+.shimmer-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    100deg,
+    rgba(255, 255, 255, 0) 20%,
+    rgba(255, 255, 255, 0.5) 50%,
+    rgba(255, 255, 255, 0) 80%
+  );
+  animation: shimmer 1.5s infinite linear;
+}
+@keyframes shimmer {
+  0% {
+    transform: translateX(-300%);
+  }
+  100% {
+    transform: translateX(300%);
+  }
+}
+.shimmer-btn {
+  margin: 10px;
+  padding: 10px 50px;
+  width: 30px;
+  background-color: #f0f0f0;
+  order: none;
+  outline: none;
+}
+.user-btn {
+  margin: 10px;
+  padding: 20px;
+  cursor: pointer;
+}
+.footer{
+    padding: 30px;
+    background-color: rgb(233, 228, 222);
+}
+.user-card{
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid black;
 }

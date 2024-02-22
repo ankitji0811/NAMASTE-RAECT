@@ -1,6 +1,8 @@
 import RestCard from "./RestCard";
 import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
+import { RES_API } from "../utils/constants";
+import { Link } from "react-router-dom";
 
 const Body = () => {
   const [newList, setNewList] = useState([]);
@@ -13,9 +15,7 @@ const Body = () => {
   }, []);
 
   const fetchData = async () => {
-    const data = await fetch(
-      "https://thingproxy.freeboard.io/fetch/https://www.swiggy.com/dapi/restaurants/list/v5?lat=21.2513844&lng=81.62964130000002&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
-    );
+    const data = await fetch(RES_API);
 
     const json = await data.json();
 
@@ -44,7 +44,6 @@ const Body = () => {
           <button
             className="search-btn"
             onClick={() => {
-              
               const filterData = newList.filter((res) =>
                 res.info.name.toLowerCase().includes(searchText.toLowerCase())
               );
@@ -71,7 +70,7 @@ const Body = () => {
 
       <div className="resCardContainer">
         {filterList.map((resturant) => (
-          <RestCard key={resturant.info.id} resData={resturant} />
+       <Link key={resturant.info.id} to={"/resMenu/resturant.info.id"}><RestCard  resData={resturant} /></Link>   
         ))}
       </div>
     </div>
