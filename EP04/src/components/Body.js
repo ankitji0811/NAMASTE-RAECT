@@ -3,12 +3,15 @@ import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
 import { RES_API } from "../utils/constants";
 import { Link } from "react-router-dom";
+import useOnlineStatus from "../utils/useOnlineStatus";
 
 const Body = () => {
   const [newList, setNewList] = useState([]);
   const [filterList, setFilterList] = useState([]);
 
   const [searchText, setSearchText] = useState("");
+
+  const onlineStatus = useOnlineStatus();
 
   useEffect(() => {
     fetchData();
@@ -26,6 +29,9 @@ const Body = () => {
     setNewList(result);
     setFilterList(result);
   };
+  
+  if(onlineStatus === false) return <h1>Please check your internet connection!!</h1>
+
 
   return newList.length === 0 ? (
     <Shimmer />
@@ -70,7 +76,7 @@ const Body = () => {
 
       <div className="resCardContainer">
         {filterList.map((resturant) => (
-       <Link key={resturant.info.id} to={"/resMenu/resturant.info.id"}><RestCard  resData={resturant} /></Link>   
+       <Link key={resturant.info.id} to={`/resMenu/${resturant.info.id}`}><RestCard  resData={resturant} /></Link>   
         ))}
       </div>
     </div>
